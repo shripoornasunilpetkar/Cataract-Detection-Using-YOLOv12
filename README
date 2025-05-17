@@ -1,0 +1,52 @@
+🔍 Project Overview: Cataract Detection Using YOLOv12
+This project involves training and evaluating a YOLOv12 object detection model for identifying cataracts in medical images. The goal is to build an AI system that can automatically detect cataract-affected regions using labeled image data.
+
+🧠 Model Used
+YOLOv12 (You Only Look Once Version 12)
+
+Model architecture used: yolov12s.yaml
+
+Utilizes FlashAttention for faster computation (requires Ampere GPU or newer like RTX 3090, 3080, etc.)
+
+📦 Dataset
+Sourced from Roboflow Universe
+
+Project: "Cataract Finder"
+
+Workspace ID: da-mec7y
+
+Dataset version: v1
+
+Format: YOLOv12-compatible (data.yaml, train/val/test image & label folders)
+
+⚙️ Training Configuration
+Framework: Ultralytics YOLO with Hugging Face supervision
+
+Epochs: 50
+
+Checkpoint: yolov12s.yaml
+
+Dataset split: train, val, and test sets as per Roboflow structure
+
+📊 Evaluation & Performance
+Evaluation Metrics:
+
+mAP@50:95 (Mean Average Precision)
+
+mAP@50
+
+mAP@75
+
+Visualization:
+
+Confusion matrix
+
+Annotated inference results with bounding boxes and class labels
+
+✅ Outcome
+The trained YOLOv12 model successfully detects cataracts in test images.
+
+Accuracy and performance are evaluated using mAP scores (exact values weren't printed in your code but were computed).
+
+The model shows good generalization, visualized through test predictions and annotation overlays.
+
